@@ -11,58 +11,66 @@ const HubSection = () => {
     const { t } = useLanguage();
 
     return (
-        <div className='flex items-center justify-between px-20 py-32 relative'>
-            {/* Left Content */}
-            <div className='w-1/2 pr-20'>
-                <h2 className='text-5xl font-semibold text-h2-color leading-tight mb-8'>
-                    {t('hubTitle')}
-                </h2>
-                <p className='text-h2-color text-lg leading-relaxed mb-10 opacity-80'>
-                    {t('hubDescription')}
-                </p>
+        <div className='container mx-auto px-4 sm:px-6 lg:px-20 py-16 lg:py-32'>
+            <div className='flex flex-col lg:flex-row items-center gap-12 lg:gap-20'>
+                {/* Left Content */}
+                <div className='w-full lg:w-1/2 text-center lg:text-left'>
+                    <h2 className='text-3xl sm:text-4xl lg:text-5xl font-semibold text-h2-color leading-tight mb-6 lg:mb-8'>
+                        {t('hubTitle')}
+                    </h2>
+                    <p className='text-h2-color text-base sm:text-lg leading-relaxed mb-8 lg:mb-10 opacity-80'>
+                        {t('hubDescription')}
+                    </p>
 
-                <button className="bg-gradient-to-r from-button-gradient-blue-start to-button-gradient-blue-end px-6 py-3 rounded-md hover:opacity-90 transition-opacity duration-300 text-white flex items-center font-bold text-lg">
-                    {t('learnMore')}
-                    <FontAwesomeIcon className='ml-3' icon={faArrowRight} />
-                </button>
-            </div>
-
-            {/* Right Images Section */}
-            <div className='w-1/2 relative h-[600px]'>
-                {/* Main large image */}
-                <div className='absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[500px] rounded-lg overflow-hidden'>
-                    <img
-                        src={Image1}
-                        alt={t('mainWorkspace')}
-                        className='w-full h-full object-cover'
-                    />
+                    <button className="w-full sm:w-auto bg-gradient-to-r from-button-gradient-blue-start to-button-gradient-blue-end 
+                        px-4 sm:px-6 py-3 rounded-md hover:opacity-90 transition-opacity duration-300 
+                        text-white flex items-center justify-center lg:justify-start font-bold text-base sm:text-lg">
+                        {t('learnMore')}
+                        <FontAwesomeIcon className='ml-3' icon={faArrowRight} />
+                    </button>
                 </div>
 
-                {/* Top floating image */}
-                <div className='absolute -top-0 right-[15%] w-48 h-32 rounded-lg overflow-hidden'>
-                    <img
-                        src={HubImage2}
-                        alt={t('teamCollaboration')}
-                        className='w-full h-full object-cover'
-                    />
-                </div>
+                {/* Right Images Section */}
+                <div className='w-full lg:w-1/2 relative h-[400px] sm:h-[500px] lg:h-[600px]'>
+                    {/* Main large image */}
+                    <div className='absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[300px] sm:h-[400px] lg:h-[500px] 
+                        rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]'>
+                        <img
+                            src={Image1}
+                            alt={t('mainWorkspace')}
+                            className='w-full h-full object-cover'
+                        />
+                    </div>
 
-                {/* Bottom floating image */}
-                <div className='absolute -bottom-0 right-[75%] w-48 h-48 rounded-lg overflow-hidden'>
-                    <img
-                        src={HubImage3}
-                        alt={t('developerWorkspace')}
-                        className='w-full h-full object-cover'
-                    />
-                </div>
+                    {/* Top floating image - Hidden on mobile */}
+                    <div className='hidden sm:block absolute -top-0 right-[15%] w-32 sm:w-40 lg:w-48 h-24 sm:h-28 lg:h-32 
+                        rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105'>
+                        <img
+                            src={HubImage2}
+                            alt={t('teamCollaboration')}
+                            className='w-full h-full object-cover'
+                        />
+                    </div>
 
-                {/* Left floating image */}
-                <div className='absolute left-0 top-[20%] w-48 h-32 rounded-lg overflow-hidden'>
-                    <img
-                        src={HubImage1}
-                        alt={t('teamMeeting')}
-                        className='w-full h-full object-cover'
-                    />
+                    {/* Bottom floating image - Hidden on mobile */}
+                    <div className='hidden sm:block absolute -bottom-0 right-[75%] w-32 sm:w-40 lg:w-48 h-32 sm:h-40 lg:h-48 
+                        rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105'>
+                        <img
+                            src={HubImage3}
+                            alt={t('developerWorkspace')}
+                            className='w-full h-full object-cover'
+                        />
+                    </div>
+
+                    {/* Left floating image - Hidden on mobile */}
+                    <div className='hidden sm:block absolute left-0 top-[20%] w-32 sm:w-40 lg:w-48 h-24 sm:h-28 lg:h-32 
+                        rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105'>
+                        <img
+                            src={HubImage1}
+                            alt={t('teamMeeting')}
+                            className='w-full h-full object-cover'
+                        />
+                    </div>
                 </div>
             </div>
         </div>
