@@ -35,11 +35,11 @@ const HubSection = () => {
                     <div className='w-full lg:w-1/2 relative h-[400px] sm:h-[500px] lg:h-[600px]'>
                         {/* Main large image */}
                         <div className='absolute right-0 lg:-right-[calc((52vw-100%)/2)] top-1/2 -translate-y-1/2 w-[90%] h-[300px] sm:h-[400px] lg:h-[500px] 
-                            rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]'>
+    overflow-hidden transition-transform duration-300 hover:scale-[1.02] rounded-tl-2xl rounded-bl-2xl'>
                             <img
                                 src={Image1}
                                 alt={t('mainWorkspace')}
-                                className='w-full h-full object-cover'
+                                className=' w-full h-full object-fit'
                             />
                         </div>
 

@@ -8,7 +8,7 @@ export const translations = {
         digitalists: "Espace DIGITALISTS",
 
         // Hero
-        heroTitle: "Collaboration instantannée pour nos équipes connectées",
+        heroTitle: "Collaboration instantanée pour nos équipes connectées",
         heroDescription: "Ce portail est un espace interne pour les membres de DIGITALY, distinct du site officiel.",
         heroButton: "Accéder au site officiel",
 

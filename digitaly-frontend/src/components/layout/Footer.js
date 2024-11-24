@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faXTwitter, faYoutube, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faXTwitter, faYoutube, faFacebookF, faInstagram, faTiktok, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Footer = () => {
@@ -22,13 +22,13 @@ const Footer = () => {
         <div className='bg-gradient-to-r from-button-gradient-blue-start to-button-gradient-blue-end px-4 sm:px-8 lg:px-20 py-6 lg:py-10 text-white'>
             {/* Top Section */}
             <div className='flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-8 lg:mb-16'>
-                <img src={Logo} alt="Logo" className="h-6 sm:h-8" />
+                <img src={Logo} alt="Logo" className="h-8 md:h-5" />
                 <button
                     onClick={scrollToTop}
                     className='text-white text-base lg:text-lg flex items-center justify-center hover:opacity-80 transition-opacity duration-300'
                 >
                     <FontAwesomeIcon className='mr-3 sm:mr-5' color='white' icon={faCircleChevronUp} />
-                    <span className="whitespace-nowrap">{t('backToTop')}</span>
+                    <span className="whitespace-nowrap font-light ">{t('backToTop')}</span>
                 </button>
             </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 lg:mb-16'>
                 {/* Language Section */}
                 <div className='order-last sm:order-first lg:order-none'>
-                    <h3 className="font-semibold mb-4 text-lg">{t('selectLanguage')}</h3>
+                    {/* <h3 className="font-semibold mb-4 text-lg">{t('selectLanguage')}</h3> */}
                     <div className="relative">
                         <button
                             className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300 text-sm sm:text-base"
@@ -103,25 +103,28 @@ const Footer = () => {
             </div>
 
             {/* Bottom Section */}
-            <div className='flex flex-col-reverse sm:flex-row justify-between items-center gap-4 pt-6 sm:pt-8 border-t border-white/20'>
+            <div className='flex flex-col-reverse sm:flex-row justify-between items-center gap-4 pt-6 sm:pt-8'>
                 <p className="text-xs sm:text-sm opacity-80 text-center sm:text-left">
                     {t('copyright')}
                 </p>
                 <div className="flex gap-4 sm:gap-6">
-                    <a href="#" className="hover:opacity-80 transition-opacity">
+                    <a href="https://discord.gg/digitaly" className="hover:opacity-80 transition-opacity">
                         <FontAwesomeIcon icon={faLinkedin} size="lg" />
                     </a>
-                    <a href="#" className="hover:opacity-80 transition-opacity">
+                    <a href="https://twitter.com/DigitalyGlobal" className="hover:opacity-80 transition-opacity">
                         <FontAwesomeIcon icon={faXTwitter} size="lg" />
                     </a>
-                    <a href="#" className="hover:opacity-80 transition-opacity">
+                    <a href="https://www.youtube.com/@digitalyglobal" className="hover:opacity-80 transition-opacity">
                         <FontAwesomeIcon icon={faYoutube} size="lg" />
                     </a>
-                    <a href="#" className="hover:opacity-80 transition-opacity">
-                        <FontAwesomeIcon icon={faFacebookF} size="lg" />
+                    <a href="https://discord.gg/digitaly" className="hover:opacity-80 transition-opacity">
+                        <FontAwesomeIcon icon={faDiscord} size="lg" />
                     </a>
-                    <a href="#" className="hover:opacity-80 transition-opacity">
+                    <a href=" https://www.instagram.com/DigitalyGlobal/" className="hover:opacity-80 transition-opacity">
                         <FontAwesomeIcon icon={faInstagram} size="lg" />
+                    </a>
+                    <a href="https://www.tiktok.com/@digitalyglobal" className="hover:opacity-80 transition-opacity">
+                        <FontAwesomeIcon icon={faTiktok} size="lg" />
                     </a>
                 </div>
             </div>
