@@ -8,6 +8,9 @@ module.exports = {
         'button-gradient-blue-end': '#003699',
         'h2-color': '#001233'
       },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

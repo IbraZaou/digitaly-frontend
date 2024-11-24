@@ -27,7 +27,7 @@ const Service = () => {
     ];
 
     return (
-        <div className="container mx-auto p-20">
+        <div className="container max-w-[90%] mx-auto py-16 lg:py-32">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {services.map((service, index) => (
                     <div key={index} className="flex flex-col h-full">
@@ -35,7 +35,7 @@ const Service = () => {
                             <img
                                 src={service.image}
                                 alt={t(service.titleKey)}
-                                className="w-full h-64 object-cover rounded-lg shadow-lg"
+                                className="w-full h-96 object-cover rounded-lg shadow-lg"
                             />
                         </div>
                         <h3 className="text-h2-color font-semibold text-2xl my-3">
