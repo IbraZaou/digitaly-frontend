@@ -53,7 +53,12 @@ export const translations = {
         news: "Actualités",
         followUs: "Suivez - nous",
         // Footer bottom
-        copyright: "Tous droits réservés © Digitaly"
+        copyright: "Tous droits réservés © Digitaly",
+
+        // 404
+        pageNotFound: "Page non trouvée",
+        pageNotFoundDescription: "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+        backToHome: "Retour à l'accueil"
     },
     en: {
         // Navbar
@@ -108,7 +113,12 @@ export const translations = {
         news: "News",
         followUs: "Follow Us",
         // Footer bottom
-        copyright: "All rights reserved © Digitaly"
+        copyright: "All rights reserved © Digitaly",
+
+        // 404
+        pageNotFound: "Page Not Found",
+        pageNotFoundDescription: "Sorry, the page you are looking for doesn't exist or has been moved.",
+        backToHome: "Back to Home"
     },
     es: {
         // Navbar
@@ -163,7 +173,12 @@ export const translations = {
         news: "Noticias",
         followUs: "Síguenos",
         // Footer bottom
-        copyright: "Todos los derechos reservados © Digitaly"
+        copyright: "Todos los derechos reservados © Digitaly",
+
+        // 404
+        pageNotFound: "Página no encontrada",
+        pageNotFoundDescription: "Lo sentimos, la página que busca no existe o se ha movido.",
+        backToHome: "Volver al inicio"
     }
 };
 
