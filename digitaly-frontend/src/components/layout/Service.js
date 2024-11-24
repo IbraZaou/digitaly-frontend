@@ -28,17 +28,17 @@ const Service = () => {
     return (
         <div className="w-full py-16 lg:py-32">
             {/* Container avec scroll horizontal sur mobile */}
-            <div className="max-w-[90%] mx-auto">
-                <div className=" flex overflow-x-auto gap-8 pb-8 lg:pb-0 snap-x snap-mandatory 
-                    scrollbar-hide lg:grid lg:grid-cols-3 no-scrollbar py-10">
+            <div className="max-w-[90%] mx-auto py-5">
+                <div className="flex gap-8 pb-8 lg:pb-5
+                    scrollbar-hide lg:grid lg:grid-cols-3 no-scrollbar ">
                     {services.map((service, index) => (
                         <div key={index}
                             className="flex-none w-[85%] sm:w-[60%] md:w-[45%] lg:w-full 
                             flex flex-col h-full shadow-md rounded-md  hover:-translate-y-6 transition ease-in-out duration-300
-                            snap-start
+                            snap-start 
                            "
                         >
-                            <div className="w-full h-72 lg:h-80 overflow-hidden rounded-lg shadow-lg mb-4">
+                            <div className="w-full h-7 lg:h-80 overflow-hidden rounded-lg shadow-lg mb-4">
                                 <img
                                     src={service.image}
                                     alt={t(service.titleKey)}
