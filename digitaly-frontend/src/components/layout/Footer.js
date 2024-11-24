@@ -22,7 +22,7 @@ const Footer = () => {
         <div className='bg-gradient-to-r from-button-gradient-blue-start to-button-gradient-blue-end px-4 sm:px-8 lg:px-20 py-6 lg:py-10 text-white'>
             {/* Top Section */}
             <div className='flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-8 lg:mb-16'>
-                <img src={Logo} alt="Logo" className="h-8 md:h-5" />
+                <img src={Logo} alt="Logo" className="h-8 md:h-8" />
                 <button
                     onClick={scrollToTop}
                     className='text-white text-base lg:text-lg flex items-center justify-center hover:opacity-80 transition-opacity duration-300'

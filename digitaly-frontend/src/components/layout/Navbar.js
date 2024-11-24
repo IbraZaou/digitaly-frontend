@@ -13,10 +13,10 @@ const Navbar = () => {
 
     return (
         <nav className={`absolute top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 transition-all duration-300 ${isMenuOpen ? 'bg-black/95' : ''}`}>
-            <div className='max-w-9xl mx-auto flex flex-wrap items-center justify-between'>
+            <div className='w-[95%] mx-auto flex flex-wrap items-center justify-between'>
                 {/* Logo */}
                 <Link to="/" className="flex-shrink-0">
-                    <img src={Logo} alt="Logo" className="h-8 md:h-5" />
+                    <img src={Logo} alt="Logo" className="h-8 md:h-8" />
                 </Link>
 
                 {/* Mobile Menu Button */}
